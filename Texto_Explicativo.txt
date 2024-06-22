@@ -1,0 +1,27 @@
+Introdução à Inteligêngia Artificial
+Projeto 2
+
+Grupo:
+Bruno Henrique Duarte - 221022239
+Ricardo Martins Fortes - 190044179
+
+O arquivo AlgoritimosML.py apresenta uma demonstração de cada um dos seguintes modelos de aprendizado de máquinas utilizando a base dados presente no arquivo LLm.csv (fonte: https://www.kaggle.com/datasets/prajwaldongre/llm-detect-ai-generated-vs-student-generated-text)
+-Linear Discriminant Analysis
+-Quadratic Discriminant Analysis
+-K-nn
+-Support Vector Machine
+-Random Forest
+
+A biblioteca scikit-learn foi utilizada para instanciar e treinar os modelos, assim como calcular suas curvas ROC e seus respectivos AUCs.
+Uma explicação mais detalhada dos processos está presente nos comentários do código.
+Para cada modelo, um gráfico representando a curva ROC foi gerado usando a biblioteca Matplotlib. Os gráficos são salvos em arquivos png, e são sobreescritos por novos plots a cada execução do programa.
+A separação dos dados para treino e teste é realizada de maneira aleatória, portanto, cada vez que o programa é executado os resultados dos modelos variam.
+
+Os modelos mais eficientes encontrados foram:
+1°: Support Vector Machine
+2°: Random Forest
+3°: K Nearest Neighbors
+4°: Quadratic Discriminant Analysis
+5°: Linear Discriminant Analysis
+Como os dados são separados aleatoriamente a eficiência dos modelos flutua. Esses foram os resultados que mais se mantiveram constantes nos testes realizados.
+O parâmetro utilizado para classificação dos modelos foi o AUC, calculado para cada modelo, a cada execução do programa.
