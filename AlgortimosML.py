@@ -108,9 +108,9 @@ plt.legend(loc="lower right")
 plt.savefig('roc_curve_qda.png')
 
 ###################################### Aplicação do K-nn ####################################################
-# A quantidade de vizinhos (K) foi escolhida como 21, pois foi a que apresentou melhores precisões dentre os testes realizados
+# A quantidade de vizinhos (K) foi escolhida como 13, pois foi a que apresentou melhores precisões dentre os testes realizados
 # Cria uma instância do modelo de aprendizado K-nn, e treina-o com os dados previamente separados
-knn = KNeighborsClassifier(n_neighbors=21)
+knn = KNeighborsClassifier(n_neighbors=13)
 knn.fit(X_train.toarray(), y_train)
 
 # Aplição do modelo, gerando as predições de classes
@@ -208,4 +208,4 @@ roc_aucs_sort = roc_aucs_sort[::-1]
 print("\n -----| Resultados |-----")
 for i in range(len(roc_aucs_sort)):
     acc, model = roc_aucs_sort[i]
-    print(f'{i+1}°: {model}, com precisão de: {acc}')
+    print(f'{i+1}°: {model}, com AUC de: {acc}')
