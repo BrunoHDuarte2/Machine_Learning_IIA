@@ -1,8 +1,0 @@
-Aqui apresento os resultados que se mantiveram mais constantes:
-1°: Support Vector Machine
-2°: Random Forest
-3°: K Nearest Neighbors
-4°: Quadratic Discriminant Analysis
-5°: Linear Discriminant Analysis
-Obviamente, como os dados são separados aleatoriamente os valores de precisão flutuam entre diferentes valores, porém esse foi o resultados que mais se manteve constante!
-Os valores utilizados foram de AUC calculados para plot da curva ROC. Ao executar o código serão gerados novos plots que são salvos junto ao projeto e printados no terminal o ranking dos modelos.
