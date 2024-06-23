@@ -1,10 +1,6 @@
 Introdução à Inteligêngia Artificial
 Projeto 2
 
-Grupo:
-Bruno Henrique Duarte - 221022239
-Ricardo Martins Fortes - 190044179
-
 O arquivo AlgoritimosML.py apresenta uma demonstração de cada um dos seguintes modelos de aprendizado de máquinas utilizando a base dados presente no arquivo LLm.csv (fonte: https://www.kaggle.com/datasets/prajwaldongre/llm-detect-ai-generated-vs-student-generated-text)
 -Linear Discriminant Analysis
 -Quadratic Discriminant Analysis
